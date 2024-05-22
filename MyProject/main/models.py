@@ -56,6 +56,7 @@ class IssuedBook(models.Model):
     # book = models.ForeignKey(Book, verbose_name='Книга', on_delete=models.CASCADE, null=True, related_name='it')
     #enrollment=[(student.enrollment,str(student.get_name)+' ['+str(student.enrollment)+']') for student in StudentExtra.objects.all()]
     enrollment=models.CharField(max_length=30)
+
     #isbn=[(str(book.isbn),book.name+' ['+str(book.isbn)+']') for book in Book.objects.all()]
     isbn=models.CharField(max_length=30)
     issuedate=models.DateField(auto_now=True)
